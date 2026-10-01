@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
-// commentairess
+// commentairesss
 @Component({
   selector: 'app-root',
   imports: [RouterLink, RouterLinkActive, RouterOutlet],
