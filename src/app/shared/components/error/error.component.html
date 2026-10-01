@@ -1,0 +1,6 @@
+<div class="error-panel" role="alert">
+  <span class="error-code">ERR // {{ code() }}</span>
+  <h2>Signal perdu</h2>
+  <p>{{ message() }}</p>
+  <button type="button" (click)="retry.emit()">↻ RELANCER LA TRANSMISSION</button>
+</div>

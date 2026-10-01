@@ -1,0 +1,29 @@
+.error-page {
+  text-align: center;
+  padding: 8rem 1rem;
+}
+
+.code {
+  color: var(--magenta);
+  font: 600 .7rem var(--font-display);
+}
+
+h1 {
+  font: 700 clamp(2rem, 7vw, 5rem) var(--font-display);
+  margin: 1rem 0;
+  color: var(--cyan);
+}
+
+p {
+  color: var(--muted);
+}
+
+a {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: .8rem 1.1rem;
+  color: var(--cyan);
+  border: 1px solid var(--cyan);
+  text-decoration: none;
+  font: 600 .65rem var(--font-display);
+}

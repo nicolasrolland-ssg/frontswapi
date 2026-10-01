@@ -1,9 +1,13 @@
 {
-  // For more information, visit: https://angular.dev/ai/mcp
   "servers": {
-    "angular-cli": {
+    "playwright-test": {
+      "type": "stdio",
       "command": "npx",
-      "args": ["-y", "@angular/cli", "mcp"]
+      "args": [
+        "playwright",
+        "run-test-mcp-server"
+      ]
     }
-  }
+  },
+  "inputs": []
 }

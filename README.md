@@ -1,59 +1,64 @@
-# StarwarsFrontend
+# Galactic Archives
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.22.
+SPA Angular 21 pour explorer l'univers Star Wars via l'API REST Spring Boot documentee dans Swagger (`http://localhost:8080/swagger-ui/index.html`). L'interface adopte une direction cyberpunk: fond spatial, grille technique, cyan electrique, violet neon et typographies Orbitron / Exo 2.
 
-## Development server
-
-To start a local development server, run:
+## Installation
 
 ```bash
-ng serve
+npm install
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+L'URL du backend est centralisee dans `src/environments/environment.ts` (`http://localhost:8080/api`). Le backend doit etre accessible avant le lancement pour obtenir les donnees reelles.
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Lancement
 
 ```bash
-ng generate component component-name
+npm start
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Puis ouvrir `http://localhost:4200`. Les quatre modules disponibles sont Personnages, Planetes, Films et Vaisseaux. Chaque module propose une recherche, une pagination, une liste et un detail.
+
+## Build et tests
 
 ```bash
-ng generate --help
+npm run build
+npm test
+npx cypress open
 ```
 
-## Building
+Les tests unitaires utilisent le runner Angular/Vitest fourni par Angular 21. Le dossier `cypress/e2e` contient les parcours E2E de navigation et de recherche.
 
-To build the project run:
+## Architecture
 
-```bash
-ng build
+```text
+src/app
+  core/                 constants, interceptors, models, services
+  features/
+    people/             people-list et people-detail
+    planets/            planets-list et planets-detail
+    films/              films-list et films-detail
+    starships/          starships-list et starships-detail
+    dashboard/          accueil et acces rapides
+    error-page/         fallback 404
+  shared/components/    loading et error reutilisables
+  app.routes.ts         routes standalone et lazy loading
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Chaque ressource possede ses propres composants standalone de liste et de detail avec leurs fichiers TypeScript, HTML et SCSS dans le meme dossier. Les composants sont en OnPush, utilisent des signals et le control flow Angular natif (`@if`, `@for`). HttpClient et un interceptor fonctionnel sont fournis dans `app.config.ts`. Angular Material/CDK sont installes pour les evolutions de composants accessibles.
 
-## Running unit tests
+## API couverte
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+- `GET /api/people`, `/api/people/{id}`, `/api/people/search`
+- `GET /api/planets`, `/api/planets/{id}`, `/api/planets/search`
+- `GET /api/films`, `/api/films/{id}`
+- `GET /api/starships`, `/api/starships/{id}`, `/api/starships/search`
 
-```bash
-ng test
-```
+Les liens de detail et les listes associees sont prepares par le modele generique et pourront etre etendus avec les endpoints relationnels documentes.
 
-## Running end-to-end tests
+## Tests E2E
 
-For end-to-end (e2e) testing, run:
+Les scénarios couvrent l'ouverture des modules depuis le dashboard, la recherche personnage et la navigation vers un détail. Les scénarios film et vaisseau suivent le même contrat de liste et peuvent être étendus avec des fixtures backend.
 
-```bash
-ng e2e
-```
+## Captures attendues
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Capturer le dashboard desktop avec sidebar, la liste responsive sur mobile avec menu hamburger, puis un détail avec les spécifications API et l'état d'erreur hors ligne.

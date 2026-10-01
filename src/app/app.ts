@@ -1,12 +1,28 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
+import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterLink, RouterLinkActive, RouterOutlet],
   templateUrl: './app.html',
-  styleUrl: './app.scss'
+  styleUrl: './app.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class App {
-  protected readonly title = signal('StarwarsFrontend');
+  protected readonly menuOpen = signal(false);
+  protected readonly navItems = [
+    { label: 'Dashboard', icon: '⌂', route: '/dashboard' },
+    { label: 'Personnages', icon: '◈', route: '/people' },
+    { label: 'Planètes', icon: '◉', route: '/planets' },
+    { label: 'Films', icon: '▣', route: '/films' },
+    { label: 'Vaisseaux', icon: '✦', route: '/starships' }
+  ];
+
+  protected toggleMenu(): void {
+    this.menuOpen.update((open) => !open);
+  }
+
+  protected closeMenu(): void {
+    this.menuOpen.set(false);
+  }
 }

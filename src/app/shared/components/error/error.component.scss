@@ -1,0 +1,28 @@
+.error-panel {
+  padding: 2rem;
+  border: 1px solid rgba(243, 77, 206, .45);
+  background: rgba(243, 77, 206, .06);
+  text-align: center;
+}
+
+.error-code {
+  color: var(--magenta);
+  font: 600 .62rem var(--font-display);
+}
+
+h2 {
+  font: 600 1.5rem var(--font-display);
+}
+
+p {
+  color: var(--muted);
+}
+
+button {
+  padding: .7rem 1rem;
+  color: var(--cyan);
+  background: transparent;
+  border: 1px solid var(--cyan);
+  cursor: pointer;
+  font: 600 .65rem var(--font-display);
+}

@@ -1,0 +1,147 @@
+- generic [ref=e3]:
+  - complementary [ref=e4]:
+    - link "Star Wars database, dashboard" [ref=e5] [cursor=pointer]:
+      - /url: /dashboard
+      - generic [ref=e6]: SW
+      - generic [ref=e7]:
+        - text: GALACTIC
+        - strong [ref=e8]: ARCHIVES
+    - generic [ref=e9]:
+      - text: ● SYSTEM ONLINE
+      - generic [ref=e10]: v.21.0
+    - navigation "Navigation principale" [ref=e11]:
+      - paragraph [ref=e12]: Navigation
+      - link "Dashboard" [ref=e13] [cursor=pointer]:
+        - /url: /dashboard
+        - generic [aria-hidden] [ref=e14]: ⌂
+        - generic [aria-hidden] [ref=e16]: ↗
+      - link "Personnages" [ref=e17] [cursor=pointer]:
+        - /url: /people
+        - generic [aria-hidden] [ref=e18]: ◈
+        - generic [aria-hidden] [ref=e20]: ↗
+      - link "Planètes" [ref=e21] [cursor=pointer]:
+        - /url: /planets
+        - generic [aria-hidden] [ref=e22]: ◉
+        - generic [aria-hidden] [ref=e24]: ↗
+      - link "Films" [ref=e25] [cursor=pointer]:
+        - /url: /films
+        - generic [aria-hidden] [ref=e26]: ▣
+        - generic [aria-hidden] [ref=e28]: ↗
+      - link "Vaisseaux" [ref=e29] [cursor=pointer]:
+        - /url: /starships
+        - generic [aria-hidden] [ref=e30]: ✦
+        - generic [aria-hidden] [ref=e32]: ↗
+    - generic [ref=e33]:
+      - generic [ref=e34]: SECTOR // 07
+      - generic [ref=e35]: © 2026 ARCHIVES
+  - generic [ref=e36]:
+    - banner [ref=e37]:
+      - generic [ref=e38]:
+        - generic [ref=e39]: ARCHIVES
+        - generic [ref=e40]: /
+        - generic [ref=e41]: CORE SYSTEM
+      - generic [ref=e42]:
+        - generic [ref=e43]: ● LIVE
+        - generic [ref=e44]: IMPERIAL NETWORK
+    - main [ref=e45]:
+      - generic [ref=e163]:
+        - generic [ref=e164]: // DATABASE / FILMS
+        - generic [ref=e165]:
+          - generic [ref=e166]:
+            - heading "Films" [level=1] [ref=e167]
+            - paragraph [ref=e168]: Chronologie cinématographique
+          - generic [ref=e169]: MODULE 03
+        - generic [ref=e170]:
+          - generic [ref=e171]:
+            - generic [aria-hidden] [ref=e172]: ⌕
+            - searchbox "Rechercher un film" [ref=e173]
+          - generic [ref=e174]: 6 SIGNATURES
+        - generic [ref=e175]:
+          - 'link "▣ #1 A New Hope episode 4 réalisateur George Lucas INSPECTER ↗" [ref=e176] [cursor=pointer]':
+            - /url: /films/1
+            - generic [ref=e177]:
+              - generic [ref=e178]: ▣
+              - generic [ref=e179]: "#1"
+            - heading "A New Hope" [level=2] [ref=e180]
+            - generic [ref=e181]:
+              - generic [ref=e182]:
+                - generic [ref=e183]: episode
+                - text: "4"
+              - generic [ref=e184]:
+                - generic [ref=e185]: réalisateur
+                - text: George Lucas
+            - generic [ref=e186]: INSPECTER ↗
+          - 'link "▣ #2 The Empire Strikes Back episode 5 réalisateur Irvin Kershner INSPECTER ↗" [ref=e187] [cursor=pointer]':
+            - /url: /films/2
+            - generic [ref=e188]:
+              - generic [ref=e189]: ▣
+              - generic [ref=e190]: "#2"
+            - heading "The Empire Strikes Back" [level=2] [ref=e191]
+            - generic [ref=e192]:
+              - generic [ref=e193]:
+                - generic [ref=e194]: episode
+                - text: "5"
+              - generic [ref=e195]:
+                - generic [ref=e196]: réalisateur
+                - text: Irvin Kershner
+            - generic [ref=e197]: INSPECTER ↗
+          - 'link "▣ #3 Return of the Jedi episode 6 réalisateur Richard Marquand INSPECTER ↗" [ref=e198] [cursor=pointer]':
+            - /url: /films/3
+            - generic [ref=e199]:
+              - generic [ref=e200]: ▣
+              - generic [ref=e201]: "#3"
+            - heading "Return of the Jedi" [level=2] [ref=e202]
+            - generic [ref=e203]:
+              - generic [ref=e204]:
+                - generic [ref=e205]: episode
+                - text: "6"
+              - generic [ref=e206]:
+                - generic [ref=e207]: réalisateur
+                - text: Richard Marquand
+            - generic [ref=e208]: INSPECTER ↗
+          - 'link "▣ #4 The Phantom Menace episode 1 réalisateur George Lucas INSPECTER ↗" [ref=e209] [cursor=pointer]':
+            - /url: /films/4
+            - generic [ref=e210]:
+              - generic [ref=e211]: ▣
+              - generic [ref=e212]: "#4"
+            - heading "The Phantom Menace" [level=2] [ref=e213]
+            - generic [ref=e214]:
+              - generic [ref=e215]:
+                - generic [ref=e216]: episode
+                - text: "1"
+              - generic [ref=e217]:
+                - generic [ref=e218]: réalisateur
+                - text: George Lucas
+            - generic [ref=e219]: INSPECTER ↗
+          - 'link "▣ #5 Attack of the Clones episode 2 réalisateur George Lucas INSPECTER ↗" [ref=e220] [cursor=pointer]':
+            - /url: /films/5
+            - generic [ref=e221]:
+              - generic [ref=e222]: ▣
+              - generic [ref=e223]: "#5"
+            - heading "Attack of the Clones" [level=2] [ref=e224]
+            - generic [ref=e225]:
+              - generic [ref=e226]:
+                - generic [ref=e227]: episode
+                - text: "2"
+              - generic [ref=e228]:
+                - generic [ref=e229]: réalisateur
+                - text: George Lucas
+            - generic [ref=e230]: INSPECTER ↗
+          - 'link "▣ #6 Revenge of the Sith episode 3 réalisateur George Lucas INSPECTER ↗" [ref=e231] [cursor=pointer]':
+            - /url: /films/6
+            - generic [ref=e232]:
+              - generic [ref=e233]: ▣
+              - generic [ref=e234]: "#6"
+            - heading "Revenge of the Sith" [level=2] [ref=e235]
+            - generic [ref=e236]:
+              - generic [ref=e237]:
+                - generic [ref=e238]: episode
+                - text: "3"
+              - generic [ref=e239]:
+                - generic [ref=e240]: réalisateur
+                - text: George Lucas
+            - generic [ref=e241]: INSPECTER ↗
+        - generic [ref=e242]:
+          - button "← PRÉCÉDENT" [disabled] [ref=e243]
+          - generic [ref=e244]: PAGE 1
+          - button "SUIVANT →" [disabled] [ref=e245]

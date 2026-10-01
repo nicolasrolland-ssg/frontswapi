@@ -1,0 +1,3 @@
+[     670ms] [LOG] Angular is running in development mode. @ http://localhost:4200/@fs/C:/Users/nrolland/vscodews/StarWars/StarwarsFrontend/.angular/cache/21.2.24/StarwarsFrontend/vite/deps/chunk-GHP7YCLX.js?v=1ef3be39:14496
+[    1199ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:4200/api/films/999:0
+[    7847ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:4200/api/films/999:0
